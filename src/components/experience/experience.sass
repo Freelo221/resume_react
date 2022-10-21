@@ -1,0 +1,66 @@
+.education
+  background: #ecedef !important
+  padding-top: 30px
+  padding-bottom: 50px
+.experience , .education
+  background: #ffffff
+  padding-top: 30px
+  padding-bottom: 50px
+  .experience--container, .education--container
+    display: flex
+    flex-direction: column
+    padding-top: 30px
+    gap: 50px
+
+
+    .experience--container-row, .education--container-row
+      display: flex
+      opacity: 0.5
+      min-height: 130px
+      @media (max-width: 767px)
+        // gap: 100px
+        flex-direction: column
+        // align-items: center
+        text-align: center
+        min-height: 50px
+      &.relevant
+        opacity: 1.0
+      .leftCol
+        flex: 1
+        .container-row--company
+          font-size: 24px
+          font-weight: bold
+          @media (max-width: 767px)
+            font-size: 16px
+        .container-row--timespan
+          font-size: 18px
+          color: #999
+          @media (max-width: 767px)
+            font-size: 14px
+      .rightCol
+
+        flex: 2
+        .container-row--position
+          font-size: 24px
+          font-weight: bold
+          margin-bottom: 20px
+          @media (max-width: 767px)
+            font-size: 18px
+            margin-bottom: 10px
+        .container-row--description
+        .container-row--links
+          display: flex
+          gap: 10px
+          align-items: center
+          @media (max-width: 767px)
+            justify-content: center
+          .container-row--links-location
+              text-decoration: none
+              color: #3870f3
+          .container-row--links-link
+          a
+            text-decoration: none
+            color: #3870f3
+            &:hover
+              text-decoration: underline
+              cursor: pointer

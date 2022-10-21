@@ -1,0 +1,89 @@
+.projects {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.projects .projects--wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px 0px;
+  padding-top: 30px;
+}
+
+.projects .projects--wrapper .projects--wrapper-item {
+  height: 300px;
+  width: 300px;
+  border: 1px solid #000;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ffffff;
+}
+
+.projects .projects--wrapper .projects--wrapper-item .wrapper--item-overlay {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  padding: 15px 30px;
+}
+
+.projects .projects--wrapper .projects--wrapper-item .wrapper--item-overlay .overlay--headline {
+  text-align: start;
+  color: white;
+  position: relative;
+  left: -200px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+.projects .projects--wrapper .projects--wrapper-item .wrapper--item-overlay .overlay--text {
+  text-align: start;
+  color: white;
+  position: relative;
+  right: -200px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+.projects .projects--wrapper .projects--wrapper-item:hover .wrapper--item-overlay {
+  cursor: pointer;
+  background: #13135e99;
+}
+
+.projects .projects--wrapper .projects--wrapper-item:hover .wrapper--item-overlay .overlay--headline {
+  color: white;
+  left: 0px;
+  opacity: 1;
+}
+
+.projects .projects--wrapper .projects--wrapper-item:hover .wrapper--item-overlay .overlay--text {
+  color: white;
+  right: 0px;
+  opacity: 15px;
+  opacity: 1;
+}
+/*# sourceMappingURL=projects.css.map */

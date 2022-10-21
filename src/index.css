@@ -1,13 +1,139 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+.smallWidthContainer {
+	max-width: 500px;
+	margin: auto;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+@media (min-width: 1200px) {
+	.smallWidthContainer {
+		max-width: 1400px;
+	}
+}
+
+@media (min-width: 992px) {
+	.smallWidthContainer {
+		max-width: 1200px;
+	}
+}
+
+@media (min-width: 767px) {
+	.smallWidthContainer {
+		max-width: 992px;
+	}
+}
+
+hr {
+	color: #2c2c2c;
+	opacity: 0.2;
+	border-width: 0.5px;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+	color: #333;
+}
+
+h2 {
+	color: #3870f3;
+	font-size: 42px;
+}
+
+@media (max-width: 767px) {
+	h2 {
+		text-align: center;
+		font-size: 28px;
+	}
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+/*# sourceMappingURL=utility.css.map */
+
+.icon {
+	height: 15px;
+	width: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	position: relative;
+	/* margin-right: 5px; */
+}
+
+.icon--location {
+	background-image: url('/public/assets/icons/icon_location.svg');
+}
+
+.icon--link {
+	background-image: url('/public/assets/icons/icon_link.svg');
+}
+
+.tools--icon-chrome {
+	background-image: url('/public/assets/image/tools/chrome.png');
+}
+
+.tools--icon-firefox {
+	background-image: url('/public/assets/image/tools/firefox.png');
+}
+
+.tools--icon-vscode {
+	background-image: url('/public/assets/image/tools/vscode.png');
+}
+
+.tools--icon-github {
+	background-image: url('/public/assets/image/tools/github.png');
+}
+
+.tools--icon-copilot {
+	background-image: url('/public/assets/image/tools/copilot.png');
+}
+
+.tools--icon-photoshop {
+	background-image: url('/public/assets/image/tools/photoshop.png');
+}
+
+.tools--icon-onenote {
+	background-image: url('/public/assets/image/tools/onenote.png');
+}
+
+.tools--icon-note {
+	background-image: url('/public/assets/image/tools/note.png');
+}
+
+.icon--whatsapp {
+	background-image: url('/public/assets/icons/icon_whatsapp.svg');
+}
+
+.icon--phone {
+	background-image: url('/public/assets/icons/icon_mobile.svg');
+}
+
+.icon--mail {
+	background-image: url('/public/assets/icons/icon_mail.svg');
 }

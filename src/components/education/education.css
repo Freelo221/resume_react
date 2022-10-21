@@ -1,0 +1,127 @@
+.education {
+  background: #ecedef !important;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.experience, .education {
+  background: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.experience .experience--container, .experience .education--container, .education .experience--container, .education .education--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+  gap: 50px;
+}
+
+.experience .experience--container .experience--container-row, .experience .experience--container .education--container-row, .experience .education--container .experience--container-row, .experience .education--container .education--container-row, .education .experience--container .experience--container-row, .education .experience--container .education--container-row, .education .education--container .experience--container-row, .education .education--container .education--container-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.5;
+  min-height: 130px;
+}
+
+@media (max-width: 767px) {
+  .experience .experience--container .experience--container-row, .experience .experience--container .education--container-row, .experience .education--container .experience--container-row, .experience .education--container .education--container-row, .education .experience--container .experience--container-row, .education .experience--container .education--container-row, .education .education--container .experience--container-row, .education .education--container .education--container-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    min-height: 50px;
+  }
+}
+
+.experience .experience--container .experience--container-row.relevant, .experience .experience--container .education--container-row.relevant, .experience .education--container .experience--container-row.relevant, .experience .education--container .education--container-row.relevant, .education .experience--container .experience--container-row.relevant, .education .experience--container .education--container-row.relevant, .education .education--container .experience--container-row.relevant, .education .education--container .education--container-row.relevant {
+  opacity: 1.0;
+}
+
+.experience .experience--container .experience--container-row .leftCol, .experience .experience--container .education--container-row .leftCol, .experience .education--container .experience--container-row .leftCol, .experience .education--container .education--container-row .leftCol, .education .experience--container .experience--container-row .leftCol, .education .experience--container .education--container-row .leftCol, .education .education--container .experience--container-row .leftCol, .education .education--container .education--container-row .leftCol {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.experience .experience--container .experience--container-row .leftCol .container-row--company, .experience .experience--container .education--container-row .leftCol .container-row--company, .experience .education--container .experience--container-row .leftCol .container-row--company, .experience .education--container .education--container-row .leftCol .container-row--company, .education .experience--container .experience--container-row .leftCol .container-row--company, .education .experience--container .education--container-row .leftCol .container-row--company, .education .education--container .experience--container-row .leftCol .container-row--company, .education .education--container .education--container-row .leftCol .container-row--company {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .experience .experience--container .experience--container-row .leftCol .container-row--company, .experience .experience--container .education--container-row .leftCol .container-row--company, .experience .education--container .experience--container-row .leftCol .container-row--company, .experience .education--container .education--container-row .leftCol .container-row--company, .education .experience--container .experience--container-row .leftCol .container-row--company, .education .experience--container .education--container-row .leftCol .container-row--company, .education .education--container .experience--container-row .leftCol .container-row--company, .education .education--container .education--container-row .leftCol .container-row--company {
+    font-size: 16px;
+  }
+}
+
+.experience .experience--container .experience--container-row .leftCol .container-row--timespan, .experience .experience--container .education--container-row .leftCol .container-row--timespan, .experience .education--container .experience--container-row .leftCol .container-row--timespan, .experience .education--container .education--container-row .leftCol .container-row--timespan, .education .experience--container .experience--container-row .leftCol .container-row--timespan, .education .experience--container .education--container-row .leftCol .container-row--timespan, .education .education--container .experience--container-row .leftCol .container-row--timespan, .education .education--container .education--container-row .leftCol .container-row--timespan {
+  font-size: 18px;
+  color: #999;
+}
+
+@media (max-width: 767px) {
+  .experience .experience--container .experience--container-row .leftCol .container-row--timespan, .experience .experience--container .education--container-row .leftCol .container-row--timespan, .experience .education--container .experience--container-row .leftCol .container-row--timespan, .experience .education--container .education--container-row .leftCol .container-row--timespan, .education .experience--container .experience--container-row .leftCol .container-row--timespan, .education .experience--container .education--container-row .leftCol .container-row--timespan, .education .education--container .experience--container-row .leftCol .container-row--timespan, .education .education--container .education--container-row .leftCol .container-row--timespan {
+    font-size: 14px;
+  }
+}
+
+.experience .experience--container .experience--container-row .rightCol, .experience .experience--container .education--container-row .rightCol, .experience .education--container .experience--container-row .rightCol, .experience .education--container .education--container-row .rightCol, .education .experience--container .experience--container-row .rightCol, .education .experience--container .education--container-row .rightCol, .education .education--container .experience--container-row .rightCol, .education .education--container .education--container-row .rightCol {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.experience .experience--container .experience--container-row .rightCol .container-row--position, .experience .experience--container .education--container-row .rightCol .container-row--position, .experience .education--container .experience--container-row .rightCol .container-row--position, .experience .education--container .education--container-row .rightCol .container-row--position, .education .experience--container .experience--container-row .rightCol .container-row--position, .education .experience--container .education--container-row .rightCol .container-row--position, .education .education--container .experience--container-row .rightCol .container-row--position, .education .education--container .education--container-row .rightCol .container-row--position {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .experience .experience--container .experience--container-row .rightCol .container-row--position, .experience .experience--container .education--container-row .rightCol .container-row--position, .experience .education--container .experience--container-row .rightCol .container-row--position, .experience .education--container .education--container-row .rightCol .container-row--position, .education .experience--container .experience--container-row .rightCol .container-row--position, .education .experience--container .education--container-row .rightCol .container-row--position, .education .education--container .experience--container-row .rightCol .container-row--position, .education .education--container .education--container-row .rightCol .container-row--position {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+.experience .experience--container .experience--container-row .rightCol .container-row--links, .experience .experience--container .education--container-row .rightCol .container-row--links, .experience .education--container .experience--container-row .rightCol .container-row--links, .experience .education--container .education--container-row .rightCol .container-row--links, .education .experience--container .experience--container-row .rightCol .container-row--links, .education .experience--container .education--container-row .rightCol .container-row--links, .education .education--container .experience--container-row .rightCol .container-row--links, .education .education--container .education--container-row .rightCol .container-row--links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .experience .experience--container .experience--container-row .rightCol .container-row--links, .experience .experience--container .education--container-row .rightCol .container-row--links, .experience .education--container .experience--container-row .rightCol .container-row--links, .experience .education--container .education--container-row .rightCol .container-row--links, .education .experience--container .experience--container-row .rightCol .container-row--links, .education .experience--container .education--container-row .rightCol .container-row--links, .education .education--container .experience--container-row .rightCol .container-row--links, .education .education--container .education--container-row .rightCol .container-row--links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.experience .experience--container .experience--container-row .rightCol .container-row--links .container-row--links-location, .experience .experience--container .education--container-row .rightCol .container-row--links .container-row--links-location, .experience .education--container .experience--container-row .rightCol .container-row--links .container-row--links-location, .experience .education--container .education--container-row .rightCol .container-row--links .container-row--links-location, .education .experience--container .experience--container-row .rightCol .container-row--links .container-row--links-location, .education .experience--container .education--container-row .rightCol .container-row--links .container-row--links-location, .education .education--container .experience--container-row .rightCol .container-row--links .container-row--links-location, .education .education--container .education--container-row .rightCol .container-row--links .container-row--links-location {
+  text-decoration: none;
+  color: #3870f3;
+}
+
+.experience .experience--container .experience--container-row .rightCol .container-row--links a, .experience .experience--container .education--container-row .rightCol .container-row--links a, .experience .education--container .experience--container-row .rightCol .container-row--links a, .experience .education--container .education--container-row .rightCol .container-row--links a, .education .experience--container .experience--container-row .rightCol .container-row--links a, .education .experience--container .education--container-row .rightCol .container-row--links a, .education .education--container .experience--container-row .rightCol .container-row--links a, .education .education--container .education--container-row .rightCol .container-row--links a {
+  text-decoration: none;
+  color: #3870f3;
+}
+
+.experience .experience--container .experience--container-row .rightCol .container-row--links a:hover, .experience .experience--container .education--container-row .rightCol .container-row--links a:hover, .experience .education--container .experience--container-row .rightCol .container-row--links a:hover, .experience .education--container .education--container-row .rightCol .container-row--links a:hover, .education .experience--container .experience--container-row .rightCol .container-row--links a:hover, .education .experience--container .education--container-row .rightCol .container-row--links a:hover, .education .education--container .experience--container-row .rightCol .container-row--links a:hover, .education .education--container .education--container-row .rightCol .container-row--links a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/*# sourceMappingURL=education.css.map */

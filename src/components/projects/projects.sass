@@ -1,0 +1,62 @@
+.projects
+  // background: #ecedef !important
+  // min-height: 1000px
+  padding-top: 30px
+  padding-bottom: 50px
+  .projects--wrapper
+    width: 100%
+    // border: 1px solid black
+
+    display: flex
+    justify-content: center
+    gap: 15px
+    flex-wrap: wrap
+    padding: 15px 0px
+    padding-top: 30px
+    .projects--wrapper-item
+      height: 300px
+      width: 300px
+      border: 1px solid #000
+      overflow: hidden
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      background-color: #ffffff
+
+      .wrapper--item-overlay
+          height: 100%
+          width: 100%
+          background: transparent
+          transition: .3s
+          display: flex
+          flex-direction: column
+          justify-content: center
+          gap: 15px
+          padding: 15px 30px
+          .overlay--headline
+            text-align: start
+            color: white
+            position: relative
+            left: -200px
+            transition: .5s
+            opacity: 0
+          .overlay--text
+            text-align: start
+            color: white
+            position: relative
+            right: -200px
+            transition: .5s
+            opacity: 0
+      &:hover
+        .wrapper--item-overlay
+          cursor: pointer
+          background: #13135e99
+          .overlay--headline
+            color: white
+            left: 0px
+            opacity: 1
+          .overlay--text
+            color: white
+            right: 0px
+            opacity: 15px
+            opacity: 1

@@ -1,0 +1,72 @@
+.intro {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro .intro--overlay {
+  background-color: #000000a3;
+  height: 100%;
+  width: 100%;
+}
+
+.intro .intro--textContainer {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.intro .intro--textContainer .intro--textContainer-person {
+  font-size: 48px;
+  padding: 5px 18px;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  text-align: center;
+  padding-bottom: 20px;
+  text-shadow: 0px 0px 10px #ffffff;
+}
+
+.intro .intro--textContainer .intro--textContainer-title {
+  font-size: 42px;
+  padding: 0px 18px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.intro .intro--textContainer-arrow {
+  width: 0;
+  height: 0;
+  border-width: 60px 45px 0 45px;
+  border-color: #ffffff transparent transparent transparent;
+  border-style: solid;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.intro .intro--textContainer-arrow:hover {
+  cursor: pointer;
+  border-color: #ccc transparent transparent transparent;
+  -webkit-filter: drop-shadow(0px 0px 10px #ccc);
+          filter: drop-shadow(0px 0px 10px #ccc);
+}
+/*# sourceMappingURL=intro.css.map */

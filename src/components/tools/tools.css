@@ -1,0 +1,42 @@
+.tools {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background: #ecedef !important;
+}
+
+.tools .tools--wrapperMain {
+  padding-top: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+  gap: 30px;
+  position: relative;
+}
+
+.tools .tools--wrapperMain .tools--wrapperMain-item {
+  height: 100px;
+  width: 100px;
+  -webkit-filter: drop-shadow(5px 5px 3px #aaa);
+          filter: drop-shadow(5px 5px 3px #aaa);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 50%;
+}
+
+.tools .tools--wrapperMain .tools--wrapperMain-item p {
+  position: absolute;
+  bottom: -30px;
+  text-align: center;
+  width: 100%;
+}
+/*# sourceMappingURL=tools.css.map */
