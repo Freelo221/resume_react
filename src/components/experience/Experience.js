@@ -5,7 +5,7 @@ import {experienceData} from '../../data/experienceData'
 function Experience(props) {
 
   const experienceEntrys = experienceData.entries.map((entry, i) => {
-    return <ExperienceRow data={entry} />
+    return <ExperienceRow key={i} data={entry} />
   })
 
   return (

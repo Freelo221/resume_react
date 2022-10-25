@@ -50,7 +50,7 @@
 
 .skills .ProgressRow:hover {
   background-color: #eee;
-  cursor: pointer;
+  cursor: default;
 }
 
 .skills .ProgressRow .item {
